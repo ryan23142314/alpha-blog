@@ -1,0 +1,23 @@
+<h1>Articles Listing Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| 
+      if article.id == 1 %>
+        <tr>
+          <td><%= article.title %></td>
+          <td><%= article.description %></td>
+          <td>Placeholder</td>
+        </tr>
+      <%end%>
+    <%end%>
+  </tbody>
+</table>
