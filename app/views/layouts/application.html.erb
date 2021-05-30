@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <%= render 'layouts/navigation' %>
+    <% flash.each do |name, msg| %>
+      <%= msg %>
+    <% end %>
     <%= yield %>
   </body>
+
+  <div class="fixed-bottom bg-dark text-white">HHHHHHHHHHHHHHHH</div>
 </html>
